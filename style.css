@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* syling for the headeer*/
+.banner{
+    background-color: #cccccc;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* syling for the question number and correct number */
+
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.questions{
+    background-color: #cccccc;
+    width: 60%;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section{
+    background-color: #cccccc;
+    width: 40%;
+    height: 80px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
