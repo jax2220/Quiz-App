@@ -2,9 +2,14 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* syling for the headeer*/
 .banner{
-    background-color: #cccccc;
+    background-color: cornflowerblue;
+    color:white;
     width: 80%;
     height: 80px;
     margin: auto;
@@ -12,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 3px;
 }
 
 /* syling for the question number and correct number */
@@ -31,17 +37,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 3px;
 }
 
-.form-section{
+.answers-list{
     background-color: #cccccc;
-    width: 40%;
-    height: 80px;
+    list-style: none;
     margin: auto;
     margin-top: 20px;
+    padding: 0;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.answers-list li{
+    background-color: #ddd;
+    height: 40px;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.answers-list li:hover{
+    background-color: white;
 }
 
 
