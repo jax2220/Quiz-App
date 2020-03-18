@@ -3,70 +3,96 @@
     margin: 0;
 }
 
-body{
+html, body{
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* syling for the headeer*/
-.banner{
-    background-color: cornflowerblue;
-    color:white;
-    width: 80%;
-    height: 80px;
-    margin: auto;
-    margin-top: 10px;
-    display: flex;
+/* style for the start screen*/
+
+header{
+    width: 100%;
+    height: 100%;
+    display: none;    /*change to display: none when start button clicked, on display non rn to syle quiz section   */
     justify-content: center;
     align-items: center;
-    border-radius: 3px;
 }
-
-/* syling for the question number and correct number */
-
-.stats{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-}
-
-.questions{
-    background-color: #cccccc;
-    width: 60%;
+.start{
+    width: 50%;
     height: 200px;
     margin: auto;
-    margin-top: 20px;
+    background-color: #cccccc;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 3px;
 }
 
-.answers-list{
-    background-color: #cccccc;
-    list-style: none;
-    margin: auto;
+#startbtn{
     margin-top: 20px;
-    padding: 0;
-    width: 50%;
-    height: 60px;
+    width:25%;
+    font-size: 20px;
+    cursor: pointer;
+}
+#startbtn:hover{
+    background-color: white;
+}
+/* end of start screen styling */
+
+/* quiz section of the page */
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.questionNum-score-container{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    border-radius: 3px;
+    width: 100%;
 }
 
-.answers-list li{
-    background-color: #ddd;
-    height: 40px;
-    width: 20%;
-    display: flex;
+.question-answers-section{
+    background-color: #cccccc;
+    display: flex; /*change to display flex when quiz is started */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    border-radius: 3px;
+    width: 50%;
 }
-.answers-list li:hover{
+
+.question{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+fieldset{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+.button{
+    font-size: 20px;
+}
+
+.button:hover{
     background-color: white;
 }
 
+/* feed back page */
 
-
+.feedback-section{
+    width: 50%;
+    height: 200px;
+    background-color: #cccccc;
+    display: none; /* display changed to flex after answer is submited*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
