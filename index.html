@@ -9,7 +9,7 @@
 <body>
     <!-- this will be hidden after the button #starbtn is clicked -->
     <!-- graybox wirefram for start page -->
-    <header>
+    <header class="header">
         <div class="start">
             <h1>United States Trivia</h1>
             <input type="button" value="Start Quiz" id="startbtn" class="button">
@@ -20,52 +20,18 @@
     <!-- jquery will inport the question number/score as well as the questions and answers to pick from -->
     <!-- graybox wirefram for the question and answer page -->
     <main class="quiz-section">
+
         <!--tracker for question number and score-->
         <div class="questionNum-score-container">
-            <!-- holder text for now -->
-            <h2 class="question-number">Question <span>1</span>/5</h2>
-            <h2 class="score">Score <span>0</span>/5</h2>
         </div>
+
         <!--Question and answers section-->
-        <section class="question-answers-section">
-            <div class="box questionbox" id="questionbox">
-                <legend class="question">Who was Vice President during WWI?</legend>
-            </div>
-            <form>
-                <fieldset>
-                    <div class="optionbox">
-                     <label for="option">
-                         <input type="radio" class="options" name="option" value="Marshal">
-                          Marshal
-                     </label>
-                
-                     <label for="option">
-                          <input type="radio" class="options" name="option" value="The Rock">
-                         The Rock
-                     </label>
-                     <br>
-                     <label for="option">
-                         <input type="radio" class="options" name="option" value="Marshal">
-                         Marshal
-                     </label>
-                
-                     <label for="option">
-                         <input type="radio" class="options" name="option" value="Marshal">
-                      Marshal
-                     </label>
-                     <br>
-                     <input type="submit" class="button" id="submitbtn" value="Submit">
-                    </div>
-                </fieldset>
-            </form> 
+        <section class="question-answers-section"> 
         </section>
+
         <!-- graybox wirefram for the feedback section to let the user know if they got the question right -->
         <section class="feedback-section">
-            <h2>You got it! Great Job!</h2>
-            <div class="correct-answer-container">
-                <span class="correct-answer">Marshal</span>
-            </div>
-            <input autofocus type="button" id="nextqbtn" class="button" value="Next Question">
+            
         </section>
     </main>
 

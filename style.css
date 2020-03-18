@@ -6,13 +6,15 @@
 html, body{
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #F2DCD8;
 }
 /* style for the start screen*/
 
-header{
+
+.header{
     width: 100%;
     height: 100%;
-    display: none;    /*change to display: none when start button clicked, on display non rn to syle quiz section   */
+    display: flex;    /*change to display: none when start button clicked, on display non rn to syle quiz section   */
     justify-content: center;
     align-items: center;
 }
@@ -20,16 +22,17 @@ header{
     width: 50%;
     height: 200px;
     margin: auto;
-    background-color: #cccccc;
+    background-color: #BF877A;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 3px;
 }
 
 #startbtn{
     margin-top: 20px;
-    width:25%;
+    /* width:25%; */
     font-size: 20px;
     cursor: pointer;
 }
@@ -55,12 +58,13 @@ main{
 }
 
 .question-answers-section{
-    background-color: #cccccc;
+    background-color: #BF877A;
     display: none; /*change to display flex when quiz is started */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
+    border-radius: 3px;
 }
 
 .question{
@@ -79,6 +83,7 @@ fieldset{
 
 .button{
     font-size: 20px;
+    margin-top: 20px;
 }
 
 .button:hover{
@@ -90,20 +95,54 @@ fieldset{
 .feedback-section{
     width: 50%;
     height: 200px;
-    background-color: #cccccc;
+    background-color: #BF877A;
     display: none; /* display changed to flex after answer is submited*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 3px;
+    padding: 10px;
+}
+.correct-answer{
+    font-size: 20px;
+    padding-top: 150px;
+    padding-bottom: 15px;
 }
 
 .results{
     width: 100%;
     height: 100%;
     margin: auto;
-    background-color: #cccccc;
-    display: flex; /* display changed to flex after answer is submited*/
+    background-color: #BF877A;
+    display: none; /* display changed to flex after answer is submited*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
+.end-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.result-end{
+    text-align: center;
+}
+.final-score{
+    list-style: none;
+}
+/* media querys for a responsive design */
+
+@media screen and (max-width: 640px){
+    .start{
+        width: 100%;
+    }
+    .question-answers-section{
+        width: 100%;
+    }
+    .feedback-section{
+        width: 100%;
+    }
 }
