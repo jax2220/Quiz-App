@@ -12,7 +12,7 @@ var store = {
     },
     {
         prompt: 'In which city was the pinball machine invented?',
-        choices: ['SaltLake City', 'Alata', 'Chicago','Seattle'],
+        choices: ['SaltLake City', 'Atlanta', 'Chicago','Seattle'],
         answer: 'Chicago',
 
     },
